@@ -1,7 +1,7 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import SplitType from 'split-type';
+// import SplitType from 'split-type';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -12,8 +12,8 @@ const Section3 = () => {
       start: "5% 50%",
       end: "100% 50%",
       scrub: 1,
-      pin: true,
-      // markers: true,
+      // pin: true,
+      markers: true,
     }
   });
   tl.to("#text-hover",{
